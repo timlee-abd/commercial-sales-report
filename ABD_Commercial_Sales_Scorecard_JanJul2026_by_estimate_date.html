@@ -1,0 +1,179 @@
+<title>ABD Commercial Sales Scorecard</title>
+<style>
+:root{--ink:#1D1D1A;--mut:#6B7280;--line:#E5E7EB;--bg:#FFFFFF;--soft:#F4F7FB;--blue:#235A91;--red:#E0323F;--green:#1F9A63;--redbg:#FDECEE;--greenbg:#E6F5EE;--bluebg:#E8EDF9}
+body{background:var(--bg);color:var(--ink);font:14px/1.45 -apple-system,Segoe UI,Inter,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:32px 40px 60px}
+h1{font-size:26px;margin:0 0 4px} .lead{color:var(--mut);margin:0 0 22px} h2{font-size:20px;margin:36px 0 12px} .sub{font-size:13px;font-weight:400;color:var(--mut);margin-left:10px}
+.funnel{display:grid;grid-template-columns:1fr 1fr 2.2fr 1fr 1fr;gap:14px;margin:0 0 14px} .funnel.four{grid-template-columns:1fr 2.4fr 1fr 1fr} .fc.est{background:#FFF4E5} .fc.est.miss{box-shadow:inset 0 0 0 2px #D97706} .fc .m.bad{color:#B45309} .fc{border-radius:12px;padding:16px 18px;background:var(--soft)} .fc.won{background:var(--greenbg)} .fc.won.miss{box-shadow:inset 0 0 0 2px var(--red)} .fc.qs{background:var(--bluebg)} .fc.lost{background:var(--redbg)}
+.fc .n{font-size:34px;font-weight:700;line-height:1} .fc .n2{font-size:22px;font-weight:700;line-height:1.4} .fc .t{font-size:12px;color:var(--mut);margin:6px 0 8px} .fc .m{font-size:20px;font-weight:600} .fc .s{font-size:12px;color:var(--mut)}
+.row{display:flex;gap:28px;align-items:flex-start} .secbox{margin-left:auto;text-align:right;opacity:.85} .n.bad,.n2.bad{color:var(--red)} .n.good,.n2.good{color:var(--green)} .bad{color:var(--red)} .good{color:var(--green)}
+.tg{margin-top:8px;padding-top:8px;border-top:1px solid rgba(0,0,0,.12);font-size:13px} .tg .s{margin-top:2px}
+.charts{display:grid;grid-template-columns:1fr;gap:18px;margin:18px 0 8px} .chart{background:var(--soft);border-radius:12px;padding:12px 14px} .ct{font-size:13px;font-weight:600;margin-bottom:6px} .lab{font-size:11px;fill:var(--mut)} .val{font-size:11px;fill:var(--ink);font-weight:600} .val.gap{fill:#E0323F} .val.good{fill:#1F9A63} .valw{font-size:11px;fill:#fff;font-weight:700}
+.tw{overflow-x:auto} table{border-collapse:collapse;width:100%;font-size:12px;white-space:nowrap} th,td{padding:6px 6px;text-align:right;border-bottom:1px solid var(--line)} th{background:var(--blue);color:#fff;font-weight:600;vertical-align:bottom;line-height:1.2} th span{font-weight:400;font-size:10px;opacity:.8}
+th.l,td.l{text-align:left} th.w{background:#17784D} th.q{background:#3D57A8} th.x{background:#B8262F} th.g{background:#1D1D1A}
+td.w{background:#F1FAF5} td.q{background:#F1F4FB} td.x{background:#FDF3F4} td.g{background:#F4F4F4;font-weight:600} td.sec{font-weight:500;opacity:.75}
+td.bad{color:var(--red);font-weight:700} td.good{color:var(--green);font-weight:700} tr.total td{font-weight:700;border-top:2px solid var(--ink);background:#FAFAFA} tr.total td.w{background:#E6F5EE} tr.total td.q{background:#E8EDF9} tr.total td.x{background:#FDECEE} td.muted{color:var(--mut);text-align:left}
+.note{font-size:12px;color:var(--mut);margin-top:14px} table.rating td{text-align:left;vertical-align:middle;white-space:normal;padding:10px 10px} table.rating th{text-align:left} td.rk{color:var(--mut);width:36px} td.nm{font-weight:700;font-size:15px;width:80px} td.sc{font-size:22px;font-weight:700;width:60px;text-align:center} .rb{display:inline-block;width:110px;height:8px;background:#E5E7EB;border-radius:4px;vertical-align:middle;overflow:hidden} .rbf{height:100%;border-radius:4px} .rbv{display:inline-block;width:28px;margin-left:6px;font-weight:600;font-size:12px} table.rating{table-layout:fixed;white-space:normal} table.rating th{white-space:normal} td.why{font-size:12.5px} .rb{width:80px} .plus{color:var(--ink)} .minus{color:var(--mut)} .legend{font-size:12px;color:var(--mut);margin:6px 0 0}
+@media(max-width:1000px){.funnel{grid-template-columns:1fr 1fr}}
+</style>
+<h1>Commercial Sales Scorecard · January – July 2026 · by estimate date</h1>
+<p class="lead">Igor, Andrew — commercial / property-management accounts · every lead below was qualified and received a written estimate · CRM export of Sep 4, 2026 · leads counted by the month of the estimate · August excluded (still closing) · <b>target: 25% of quoted leads won</b></p>
+<div class="funnel">
+<div class="fc est miss"><div class="n">391</div><div class="t">estimates done</div><div class="m bad">23 no quote sent</div><div class="s">5.9% of estimates · 23 older than 14 days</div></div>
+<div class="fc all"><div class="n">368</div><div class="t">leads quoted</div><div class="m">$19,416,593</div><div class="s">avg quote $52,762</div></div>
+<div class="fc won ok"><div class="row">
+  <div><div class="n good">37.0%</div><div class="t"><b>CR</b> · won ÷ quoted leads · target 25% (+12.0%)</div></div>
+  <div><div class="n">136</div><div class="t">Lead Won · $4,036,057</div></div>
+</div>
+<div class="tg">Target 25% of 368 leads = <b>92 won</b> · actual 136 → <span class="good">on target</span><div class="s">avg won job $29,677 · 0 jobs × $29,677 = <span class='good'>on target</span></div></div></div>
+<div class="fc qs"><div class="n">219</div><div class="t">Quote Sent · 59.5% of leads</div><div class="m">$14,925,363</div><div class="s">76.9% of quoted $</div></div>
+<div class="fc lost"><div class="n">13</div><div class="t">Lead Lost · 3.5% of leads</div><div class="m">$814,960</div><div class="s">4.2% of quoted $</div></div>
+</div>
+<div class="charts"><div class="chart wide"><div class="ct">Conversion rate (won ÷ quoted leads) vs 25% target — solid = actual, striped = gap to target</div><svg viewBox="0 0 1160 120" width="100%" role="img" aria-label="Conversion rate (won ÷ quoted leads) vs 25% target — solid = actual, striped = gap to target"><defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#FDECEE"/><line x1="0" y1="0" x2="0" y2="6" stroke="#E0323F" stroke-width="1.5"/></pattern></defs><text x="62" y="23" text-anchor="end" class="lab">IGOR</text><rect x="70" y="8" width="980.0" height="20" rx="4" fill="#1F9A63"/><text x="76" y="22" class="valw">43%</text><text x="1056.0" y="23" class="val good">+18%</text><text x="62" y="53" text-anchor="end" class="lab">ANDREW</text><rect x="70" y="38" width="681.7" height="20" rx="4" fill="#E0323F"/><text x="76" y="52" class="valw">24%</text><rect x="753.7" y="38" width="16.3" height="20" rx="4" fill="url(#hatch)" stroke="#E0323F" stroke-width="1"/><text x="776.0" y="53" class="val gap">−1%</text><text x="62" y="83" text-anchor="end" class="lab">TEAM</text><rect x="70" y="68" width="980.0" height="20" rx="4" fill="#1D1D1A"/><text x="76" y="82" class="valw">37%</text><text x="1056.0" y="83" class="val good">+12%</text><line x1="770.0" x2="770.0" y1="0" y2="98" stroke="#1D1D1A" stroke-width="2" stroke-dasharray="4 3"/><text x="770.0" y="114" text-anchor="middle" class="lab">target 25%</text></svg></div><div class="chart wide"><div class="ct">Where the team sits on the industry conversion-rate scale (estimated, pre-qualified leads)</div><svg viewBox="0 0 1160 170" width="100%" role="img" aria-label="Industry CR scale"><rect x="20.0" y="96" width="336.0" height="26" fill="#FDECEE"/><text x="188.0" y="113" text-anchor="middle" class="lab" style="font-size:10.5px">below industry</text><rect x="356.0" y="96" width="112.0" height="26" fill="#FCE8D5"/><text x="412.0" y="113" text-anchor="middle" class="lab" style="font-size:10.5px">weak</text><rect x="468.0" y="96" width="112.0" height="26" fill="#FFF4CC"/><text x="524.0" y="113" text-anchor="middle" class="lab" style="font-size:10.5px">industry average</text><rect x="580.0" y="96" width="112.0" height="26" fill="#E6F5EE"/><text x="636.0" y="113" text-anchor="middle" class="lab" style="font-size:10.5px">target · good</text><rect x="692.0" y="96" width="224.0" height="26" fill="#CFEDD9"/><text x="804.0" y="113" text-anchor="middle" class="lab" style="font-size:10.5px">strong (pre-qualified leads)</text><rect x="916.0" y="96" width="224.0" height="26" fill="#B7E4C7"/><text x="1028.0" y="113" text-anchor="middle" class="lab" style="font-size:10.5px">top performers</text><line x1="20.0" x2="20.0" y1="122" y2="128" stroke="#6B7280"/><text x="20.0" y="140" text-anchor="middle" class="lab">0%</text><line x1="244.0" x2="244.0" y1="122" y2="128" stroke="#6B7280"/><text x="244.0" y="140" text-anchor="middle" class="lab">10%</text><line x1="356.0" x2="356.0" y1="122" y2="128" stroke="#6B7280"/><text x="356.0" y="140" text-anchor="middle" class="lab">15%</text><line x1="468.0" x2="468.0" y1="122" y2="128" stroke="#6B7280"/><text x="468.0" y="140" text-anchor="middle" class="lab">20%</text><line x1="580.0" x2="580.0" y1="122" y2="128" stroke="#6B7280"/><text x="580.0" y="140" text-anchor="middle" class="lab">25%</text><line x1="692.0" x2="692.0" y1="122" y2="128" stroke="#6B7280"/><text x="692.0" y="140" text-anchor="middle" class="lab">30%</text><line x1="916.0" x2="916.0" y1="122" y2="128" stroke="#6B7280"/><text x="916.0" y="140" text-anchor="middle" class="lab">40%</text><line x1="1140.0" x2="1140.0" y1="122" y2="128" stroke="#6B7280"/><text x="1140.0" y="140" text-anchor="middle" class="lab">50%</text><line x1="580.0" x2="580.0" y1="88" y2="128" stroke="#1D1D1A" stroke-width="2" stroke-dasharray="4 3"/><text x="580.0" y="156" text-anchor="middle" class="val">target 25%</text><line x1="565.4" x2="565.4" y1="82" y2="96" stroke="#E0323F" stroke-width="1.5"/><circle cx="565.4" cy="82" r="5.5" fill="#E0323F" stroke="#fff" stroke-width="2"/><text x="574.4" y="86" class="val" style="fill:#E0323F">ANDREW 24%</text><line x1="847.8" x2="847.8" y1="82" y2="96" stroke="#1D1D1A" stroke-width="1.5"/><circle cx="847.8" cy="82" r="5.5" fill="#1D1D1A" stroke="#fff" stroke-width="2"/><text x="856.8" y="86" class="val" style="fill:#1D1D1A">TEAM 37%</text><line x1="976.2" x2="976.2" y1="82" y2="96" stroke="#1F9A63" stroke-width="1.5"/><circle cx="976.2" cy="82" r="5.5" fill="#1F9A63" stroke="#fff" stroke-width="2"/><text x="985.2" y="86" class="val" style="fill:#1F9A63">IGOR 43%</text></svg></div><div class="chart wide"><div class="ct">Won $ vs target $ — green = won, striped = short of target (jobs short × actual avg won job) · same scale for everyone</div><svg viewBox="0 0 1160 102" width="100%" role="img" aria-label="Revenue vs target"><defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#FDECEE"/><line x1="0" y1="0" x2="0" y2="6" stroke="#E0323F" stroke-width="1.5"/></pattern></defs><text x="62" y="23" text-anchor="end" class="lab">IGOR</text><rect x="70" y="8" width="748.2" height="20" rx="4" fill="#1F9A63"/><text x="75" y="22" class="valw" style="font-size:11px">$3.14M</text><text x="824.2" y="23" class="val good">on target</text><text x="62" y="53" text-anchor="end" class="lab">ANDREW</text><rect x="70" y="38" width="212.6" height="20" rx="4" fill="#1F9A63"/><text x="75" y="52" class="valw" style="font-size:11px">$893K</text><rect x="284.6" y="38" width="5.6" height="20" rx="4" fill="url(#hatch)" stroke="#E0323F" stroke-width="1"/><text x="296.2" y="53" class="val gap">−$32K</text><text x="62" y="83" text-anchor="end" class="lab">TEAM</text><rect x="70" y="68" width="960.8" height="20" rx="4" fill="#1D1D1A"/><text x="75" y="82" class="valw" style="font-size:11px">$4.04M</text><text x="1036.8" y="83" class="val good">on target</text></svg></div></div>
+<p class="legend">Solid bar = actual · striped = how much is missing to reach the target · Team in black. Table colours follow the CRM: Lead Won green, Quote Sent blue, Lead Lost red.</p>
+<h2>Quote turnaround <span class="sub">estimate visit → quote sent · target: every estimate quoted, 75% within 2 days</span></h2>
+<div class="tw"><table><thead><tr><th class="l">Rep</th><th>Estimates done</th><th>Quotes sent</th><th>% quoted</th><th class="x">No quote sent</th><th class="x">…older than 14 days</th><th>Median days to quote</th><th>Same day</th><th>Within 2 days</th><th class="x">Over 5 days</th></tr></thead><tbody><tr><td class="l">Igor</td><td>274</td><td>253</td><td class="bad">92.3%</td><td class="bad">21</td><td class="bad">21</td><td>1</td><td>48.2%</td><td class="good">87.4%</td><td class="good">5.5%</td></tr><tr><td class="l">Andrew</td><td>117</td><td>115</td><td class="good">98.3%</td><td class="bad">2</td><td class="bad">2</td><td>2</td><td>19.1%</td><td class="bad">59.1%</td><td class="bad">12.2%</td></tr><tr class="total"><td class="l">Team</td><td>391</td><td>368</td><td class="bad">94.1%</td><td class="bad">23</td><td class="bad">23</td><td>1</td><td>39.1%</td><td class="good">78.5%</td><td class="good">7.6%</td></tr></tbody></table></div>
+<p class="note">"No quote sent" = leads still in Scheduled / Reschedule Needed after the estimate date with no disqualification reason — the customer was visited (or the visit was never re-booked) and never received a price. Leads disqualified after the visit (e.g. Out of Scope) are excluded from "estimates done" entirely. Not counted in CR; a leak before the funnel starts.</p>
+<div class="chart wide"><div class="ct">Does quote speed matter? — CR by days between the estimate visit and the quote being sent (team, Jan–Jul)</div><svg viewBox="0 0 1160 162" width="100%"><text x="72" y="23" text-anchor="end" class="lab">same day</text><rect x="80" y="8" width="713.0" height="20" rx="4" fill="#1F9A63"/><text x="799.0" y="23" class="val">48%  <tspan class="lab">69 won of 144</tspan></text><text x="72" y="53" text-anchor="end" class="lab">1 day</text><rect x="80" y="38" width="569.0" height="20" rx="4" fill="#1F9A63"/><text x="655.0" y="53" class="val">38%  <tspan class="lab">39 won of 102</tspan></text><text x="72" y="83" text-anchor="end" class="lab">2 days</text><rect x="80" y="68" width="311.5" height="20" rx="4" fill="#D97706"/><text x="397.5" y="83" class="val">21%  <tspan class="lab">9 won of 43</tspan></text><text x="72" y="113" text-anchor="end" class="lab">3-5 days</text><rect x="80" y="98" width="273.3" height="20" rx="4" fill="#D97706"/><text x="359.3" y="113" class="val">18%  <tspan class="lab">9 won of 49</tspan></text><text x="72" y="143" text-anchor="end" class="lab">6+ days</text><rect x="80" y="128" width="425.2" height="20" rx="4" fill="#1F9A63"/><text x="511.2" y="143" class="val">29%  <tspan class="lab">8 won of 28</tspan></text></svg></div>
+<h2>Team by month</h2>
+<div class="tw"><table><thead><tr><th class="l">Month</th><th>Leads<br><span>quoted</span></th><th>Quoted $</th><th>Avg quote</th>
+    <th class="w">Won</th><th class="w">Won $</th><th class="w">CR<br><span>won ÷ leads · target 25%</span></th><th class="w">Avg won job</th>
+    <th class="q">Quote Sent</th><th class="q">Quote Sent $</th><th class="q">% of leads</th>
+    <th class="x">Lost</th><th class="x">Lost $</th><th class="x">% of leads</th>
+    <th class="g">Won needed<br><span>at 25%</span></th><th class="g">Jobs short</th><th class="g">$ short<br><span>jobs short × avg won job</span></th></tr></thead><tbody><tr><td class="l">Jan</td><td>35</td><td>$1,649,455</td><td>$47,127</td>
+        <td class="w">16</td><td class="w">$484,085</td><td class="w good">45.7%</td><td class="w">$30,255</td>
+        <td class="q">19</td><td class="q">$1,232,150</td><td class="q">54.3%</td>
+        <td class="x">0</td><td class="x">$0</td><td class="x">0.0%</td>
+        <td class="g">9</td><td class="g good">+7</td><td class="g good">–</td></tr><tr><td class="l">Feb</td><td>38</td><td>$1,684,275</td><td>$44,323</td>
+        <td class="w">22</td><td class="w">$352,190</td><td class="w good">57.9%</td><td class="w">$16,009</td>
+        <td class="q">16</td><td class="q">$1,336,025</td><td class="q">42.1%</td>
+        <td class="x">0</td><td class="x">$0</td><td class="x">0.0%</td>
+        <td class="g">10</td><td class="g good">+12</td><td class="g good">–</td></tr><tr><td class="l">Mar</td><td>47</td><td>$2,214,380</td><td>$47,114</td>
+        <td class="w">19</td><td class="w">$558,899</td><td class="w good">40.4%</td><td class="w">$29,416</td>
+        <td class="q">27</td><td class="q">$1,682,840</td><td class="q">57.4%</td>
+        <td class="x">1</td><td class="x">$2,500</td><td class="x">2.1%</td>
+        <td class="g">12</td><td class="g good">+7</td><td class="g good">–</td></tr><tr><td class="l">Apr</td><td>46</td><td>$2,052,245</td><td>$44,614</td>
+        <td class="w">13</td><td class="w">$428,334</td><td class="w good">28.3%</td><td class="w">$32,949</td>
+        <td class="q">27</td><td class="q">$1,489,005</td><td class="q">58.7%</td>
+        <td class="x">6</td><td class="x">$147,630</td><td class="x">13.0%</td>
+        <td class="g">12</td><td class="g good">+1</td><td class="g good">–</td></tr><tr><td class="l">May</td><td>59</td><td>$3,665,460</td><td>$62,126</td>
+        <td class="w">16</td><td class="w">$741,552</td><td class="w good">27.1%</td><td class="w">$46,347</td>
+        <td class="q">37</td><td class="q">$2,398,732</td><td class="q">62.7%</td>
+        <td class="x">6</td><td class="x">$664,830</td><td class="x">10.2%</td>
+        <td class="g">15</td><td class="g good">+1</td><td class="g good">–</td></tr><tr><td class="l">Jun</td><td>69</td><td>$3,827,100</td><td>$55,465</td>
+        <td class="w">21</td><td class="w">$469,845</td><td class="w good">30.4%</td><td class="w">$22,374</td>
+        <td class="q">48</td><td class="q">$3,394,869</td><td class="q">69.6%</td>
+        <td class="x">0</td><td class="x">$0</td><td class="x">0.0%</td>
+        <td class="g">17</td><td class="g good">+4</td><td class="g good">–</td></tr><tr><td class="l">Jul</td><td>74</td><td>$4,323,678</td><td>$58,428</td>
+        <td class="w">29</td><td class="w">$1,001,153</td><td class="w good">39.2%</td><td class="w">$34,523</td>
+        <td class="q">45</td><td class="q">$3,391,742</td><td class="q">60.8%</td>
+        <td class="x">0</td><td class="x">$0</td><td class="x">0.0%</td>
+        <td class="g">18</td><td class="g good">+11</td><td class="g good">–</td></tr><tr class="total"><td class="l">Jan–Jul</td><td>368</td><td>$19,416,593</td><td>$52,762</td>
+        <td class="w">136</td><td class="w">$4,036,057</td><td class="w good">37.0%</td><td class="w">$29,677</td>
+        <td class="q">219</td><td class="q">$14,925,363</td><td class="q">59.5%</td>
+        <td class="x">13</td><td class="x">$814,960</td><td class="x">3.5%</td>
+        <td class="g">92</td><td class="g good">+44</td><td class="g good">–</td></tr></tbody></table></div>
+<h2>By rep, Jan–Jul totals</h2>
+<div class="tw"><table><thead><tr><th class="l">Rep</th><th>Leads<br><span>quoted</span></th><th>Quoted $</th><th>Avg quote</th>
+    <th class="w">Won</th><th class="w">Won $</th><th class="w">CR<br><span>won ÷ leads · target 25%</span></th><th class="w">Avg won job</th>
+    <th class="q">Quote Sent</th><th class="q">Quote Sent $</th><th class="q">% of leads</th>
+    <th class="x">Lost</th><th class="x">Lost $</th><th class="x">% of leads</th>
+    <th class="g">Won needed<br><span>at 25%</span></th><th class="g">Jobs short</th><th class="g">$ short<br><span>jobs short × avg won job</span></th></tr></thead><tbody><tr><td class="l">Igor</td><td>253</td><td>$13,518,001</td><td>$53,431</td>
+        <td class="w">108</td><td class="w">$3,143,020</td><td class="w good">42.7%</td><td class="w">$29,102</td>
+        <td class="q">143</td><td class="q">$10,566,867</td><td class="q">56.5%</td>
+        <td class="x">2</td><td class="x">$64,500</td><td class="x">0.8%</td>
+        <td class="g">63</td><td class="g good">+45</td><td class="g good">–</td></tr><tr><td class="l">Andrew</td><td>115</td><td>$5,898,592</td><td>$51,292</td>
+        <td class="w">28</td><td class="w">$893,038</td><td class="w bad">24.3%</td><td class="w">$31,894</td>
+        <td class="q">76</td><td class="q">$4,358,496</td><td class="q">66.1%</td>
+        <td class="x">11</td><td class="x">$750,460</td><td class="x">9.6%</td>
+        <td class="g">29</td><td class="g bad">−1</td><td class="g bad">−$31,894</td></tr><tr class="total"><td class="l">Team</td><td>368</td><td>$19,416,593</td><td>$52,762</td>
+        <td class="w">136</td><td class="w">$4,036,057</td><td class="w good">37.0%</td><td class="w">$29,677</td>
+        <td class="q">219</td><td class="q">$14,925,363</td><td class="q">59.5%</td>
+        <td class="x">13</td><td class="x">$814,960</td><td class="x">3.5%</td>
+        <td class="g">92</td><td class="g good">+44</td><td class="g good">–</td></tr></tbody></table></div>
+<section class="rep"><h2>Igor <span class="sub">253 leads · $13,518,001 quoted · 108 won (42.7%) · $3,143,020</span></h2>
+    <div class="funnel">
+<div class="fc est miss"><div class="n">274</div><div class="t">estimates done</div><div class="m bad">21 no quote sent</div><div class="s">7.7% of estimates · 21 older than 14 days</div></div>
+<div class="fc all"><div class="n">253</div><div class="t">leads quoted</div><div class="m">$13,518,001</div><div class="s">avg quote $53,431</div></div>
+<div class="fc won ok"><div class="row">
+  <div><div class="n good">42.7%</div><div class="t"><b>CR</b> · won ÷ quoted leads · target 25% (+17.7%)</div></div>
+  <div><div class="n">108</div><div class="t">Lead Won · $3,143,020</div></div>
+</div>
+<div class="tg">Target 25% of 253 leads = <b>63 won</b> · actual 108 → <span class="good">on target</span><div class="s">avg won job $29,102 · 0 jobs × $29,102 = <span class='good'>on target</span></div></div></div>
+<div class="fc qs"><div class="n">143</div><div class="t">Quote Sent · 56.5% of leads</div><div class="m">$10,566,867</div><div class="s">78.2% of quoted $</div></div>
+<div class="fc lost"><div class="n">2</div><div class="t">Lead Lost · 0.8% of leads</div><div class="m">$64,500</div><div class="s">0.5% of quoted $</div></div>
+</div>
+    <div class="tw"><table><thead><tr><th class="l">Month</th><th>Leads<br><span>quoted</span></th><th>Quoted $</th><th>Avg quote</th>
+    <th class="w">Won</th><th class="w">Won $</th><th class="w">CR<br><span>won ÷ leads · target 25%</span></th><th class="w">Avg won job</th>
+    <th class="q">Quote Sent</th><th class="q">Quote Sent $</th><th class="q">% of leads</th>
+    <th class="x">Lost</th><th class="x">Lost $</th><th class="x">% of leads</th>
+    <th class="g">Won needed<br><span>at 25%</span></th><th class="g">Jobs short</th><th class="g">$ short<br><span>jobs short × avg won job</span></th></tr></thead><tbody><tr><td class="l">Jan</td><td>35</td><td>$1,649,455</td><td>$47,127</td>
+        <td class="w">16</td><td class="w">$484,085</td><td class="w good">45.7%</td><td class="w">$30,255</td>
+        <td class="q">19</td><td class="q">$1,232,150</td><td class="q">54.3%</td>
+        <td class="x">0</td><td class="x">$0</td><td class="x">0.0%</td>
+        <td class="g">9</td><td class="g good">+7</td><td class="g good">–</td></tr><tr><td class="l">Feb</td><td>38</td><td>$1,684,275</td><td>$44,323</td>
+        <td class="w">22</td><td class="w">$352,190</td><td class="w good">57.9%</td><td class="w">$16,009</td>
+        <td class="q">16</td><td class="q">$1,336,025</td><td class="q">42.1%</td>
+        <td class="x">0</td><td class="x">$0</td><td class="x">0.0%</td>
+        <td class="g">10</td><td class="g good">+12</td><td class="g good">–</td></tr><tr><td class="l">Mar</td><td>47</td><td>$2,214,380</td><td>$47,114</td>
+        <td class="w">19</td><td class="w">$558,899</td><td class="w good">40.4%</td><td class="w">$29,416</td>
+        <td class="q">27</td><td class="q">$1,682,840</td><td class="q">57.4%</td>
+        <td class="x">1</td><td class="x">$2,500</td><td class="x">2.1%</td>
+        <td class="g">12</td><td class="g good">+7</td><td class="g good">–</td></tr><tr><td class="l">Apr</td><td>34</td><td>$1,760,475</td><td>$51,779</td>
+        <td class="w">8</td><td class="w">$317,515</td><td class="w bad">23.5%</td><td class="w">$39,689</td>
+        <td class="q">25</td><td class="q">$1,389,625</td><td class="q">73.5%</td>
+        <td class="x">1</td><td class="x">$62,000</td><td class="x">2.9%</td>
+        <td class="g">8</td><td class="g good">0</td><td class="g good">–</td></tr><tr><td class="l">May</td><td>26</td><td>$1,449,418</td><td>$55,747</td>
+        <td class="w">10</td><td class="w">$578,078</td><td class="w good">38.5%</td><td class="w">$57,808</td>
+        <td class="q">16</td><td class="q">$985,770</td><td class="q">61.5%</td>
+        <td class="x">0</td><td class="x">$0</td><td class="x">0.0%</td>
+        <td class="g">6</td><td class="g good">+4</td><td class="g good">–</td></tr><tr><td class="l">Jun</td><td>30</td><td>$2,198,030</td><td>$73,268</td>
+        <td class="w">12</td><td class="w">$166,924</td><td class="w good">40.0%</td><td class="w">$13,910</td>
+        <td class="q">18</td><td class="q">$2,036,730</td><td class="q">60.0%</td>
+        <td class="x">0</td><td class="x">$0</td><td class="x">0.0%</td>
+        <td class="g">8</td><td class="g good">+4</td><td class="g good">–</td></tr><tr><td class="l">Jul</td><td>43</td><td>$2,561,968</td><td>$59,581</td>
+        <td class="w">21</td><td class="w">$685,328</td><td class="w good">48.8%</td><td class="w">$32,635</td>
+        <td class="q">22</td><td class="q">$1,903,727</td><td class="q">51.2%</td>
+        <td class="x">0</td><td class="x">$0</td><td class="x">0.0%</td>
+        <td class="g">11</td><td class="g good">+10</td><td class="g good">–</td></tr><tr class="total"><td class="l">Jan–Jul</td><td>253</td><td>$13,518,001</td><td>$53,431</td>
+        <td class="w">108</td><td class="w">$3,143,020</td><td class="w good">42.7%</td><td class="w">$29,102</td>
+        <td class="q">143</td><td class="q">$10,566,867</td><td class="q">56.5%</td>
+        <td class="x">2</td><td class="x">$64,500</td><td class="x">0.8%</td>
+        <td class="g">63</td><td class="g good">+45</td><td class="g good">–</td></tr></tbody></table></div></section><section class="rep"><h2>Andrew <span class="sub">115 leads · $5,898,592 quoted · 28 won (24.3%) · $893,038</span></h2>
+    <div class="funnel">
+<div class="fc est miss"><div class="n">117</div><div class="t">estimates done</div><div class="m bad">2 no quote sent</div><div class="s">1.7% of estimates · 2 older than 14 days</div></div>
+<div class="fc all"><div class="n">115</div><div class="t">leads quoted</div><div class="m">$5,898,592</div><div class="s">avg quote $51,292</div></div>
+<div class="fc won miss"><div class="row">
+  <div><div class="n bad">24.3%</div><div class="t"><b>CR</b> · won ÷ quoted leads · target 25% (-0.7%)</div></div>
+  <div><div class="n">28</div><div class="t">Lead Won · $893,038</div></div>
+</div>
+<div class="tg">Target 25% of 115 leads = <b>29 won</b> · actual 28 → <span class="bad">−1 jobs</span><div class="s">avg won job $31,894 · 1 jobs × $31,894 = <span class='bad'>−$31,894 short</span></div></div></div>
+<div class="fc qs"><div class="n">76</div><div class="t">Quote Sent · 66.1% of leads</div><div class="m">$4,358,496</div><div class="s">73.9% of quoted $</div></div>
+<div class="fc lost"><div class="n">11</div><div class="t">Lead Lost · 9.6% of leads</div><div class="m">$750,460</div><div class="s">12.7% of quoted $</div></div>
+</div>
+    <div class="tw"><table><thead><tr><th class="l">Month</th><th>Leads<br><span>quoted</span></th><th>Quoted $</th><th>Avg quote</th>
+    <th class="w">Won</th><th class="w">Won $</th><th class="w">CR<br><span>won ÷ leads · target 25%</span></th><th class="w">Avg won job</th>
+    <th class="q">Quote Sent</th><th class="q">Quote Sent $</th><th class="q">% of leads</th>
+    <th class="x">Lost</th><th class="x">Lost $</th><th class="x">% of leads</th>
+    <th class="g">Won needed<br><span>at 25%</span></th><th class="g">Jobs short</th><th class="g">$ short<br><span>jobs short × avg won job</span></th></tr></thead><tbody><tr><td class="l">Jan</td><td colspan="16" class="muted">no leads</td></tr><tr><td class="l">Feb</td><td colspan="16" class="muted">no leads</td></tr><tr><td class="l">Mar</td><td colspan="16" class="muted">no leads</td></tr><tr><td class="l">Apr</td><td>12</td><td>$291,770</td><td>$24,314</td>
+        <td class="w">5</td><td class="w">$110,819</td><td class="w good">41.7%</td><td class="w">$22,164</td>
+        <td class="q">2</td><td class="q">$99,380</td><td class="q">16.7%</td>
+        <td class="x">5</td><td class="x">$85,630</td><td class="x">41.7%</td>
+        <td class="g">3</td><td class="g good">+2</td><td class="g good">–</td></tr><tr><td class="l">May</td><td>33</td><td>$2,216,042</td><td>$67,153</td>
+        <td class="w">6</td><td class="w">$163,474</td><td class="w bad">18.2%</td><td class="w">$27,246</td>
+        <td class="q">21</td><td class="q">$1,412,962</td><td class="q">63.6%</td>
+        <td class="x">6</td><td class="x">$664,830</td><td class="x">18.2%</td>
+        <td class="g">8</td><td class="g bad">−2</td><td class="g bad">−$63,788</td></tr><tr><td class="l">Jun</td><td>39</td><td>$1,629,070</td><td>$41,771</td>
+        <td class="w">9</td><td class="w">$302,921</td><td class="w bad">23.1%</td><td class="w">$33,658</td>
+        <td class="q">30</td><td class="q">$1,358,139</td><td class="q">76.9%</td>
+        <td class="x">0</td><td class="x">$0</td><td class="x">0.0%</td>
+        <td class="g">10</td><td class="g bad">−1</td><td class="g bad">−$31,894</td></tr><tr><td class="l">Jul</td><td>31</td><td>$1,761,710</td><td>$56,829</td>
+        <td class="w">8</td><td class="w">$315,825</td><td class="w good">25.8%</td><td class="w">$39,478</td>
+        <td class="q">23</td><td class="q">$1,488,015</td><td class="q">74.2%</td>
+        <td class="x">0</td><td class="x">$0</td><td class="x">0.0%</td>
+        <td class="g">8</td><td class="g good">0</td><td class="g good">–</td></tr><tr class="total"><td class="l">Jan–Jul</td><td>115</td><td>$5,898,592</td><td>$51,292</td>
+        <td class="w">28</td><td class="w">$893,038</td><td class="w bad">24.3%</td><td class="w">$31,894</td>
+        <td class="q">76</td><td class="q">$4,358,496</td><td class="q">66.1%</td>
+        <td class="x">11</td><td class="x">$750,460</td><td class="x">9.6%</td>
+        <td class="g">29</td><td class="g bad">−1</td><td class="g bad">−$31,894</td></tr></tbody></table></div></section>
+
+<p class="note">Source: CRM export UTMList 6, Sep 4, 2026. "Estimates done" = every lead with an estimate visit in the period that was not disqualified afterwards, including those still in Scheduled / Reschedule Needed with no quote sent; CR is calculated on leads that received a quote. Target: 25% of quoted leads won; "Won needed" = 25% × leads, "Jobs short" = needed − won; "$ short" = jobs short × actual average won job for the whole period (each rep's own in his tables, team average in the team tables). Industry scale: contractor close-rate benchmarks for pre-qualified, estimated leads (20–25% average across lead types, 30–40% good; marketplace leads such as Angi/Yelp/Thumbtack average 10–15%). Won $ uses Total Project Value; Quote Sent and Lost $ use Quote Value.</p>
